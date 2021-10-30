@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body,
+html {
+  height: 100%;
+  display: grid;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  background: #ffffff;
+  transition: background 0.25s linear;
+}
+
+h1 {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.ghost {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 200px;
+  width: 200px;
+  transition: transform 0.25s ease, background 0.25s linear,
+    opacity 1.25s ease-in;
+}
+
+.appear {
+  background: url("https://static.vecteezy.com/system/resources/previews/001/204/824/non_2x/ghost-png.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cancel-btn {
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-family: Lato, sans-serif;
+  color: white;
+  background: #f9a825;
+  text-transform: uppercase;
+  padding: 1em;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
